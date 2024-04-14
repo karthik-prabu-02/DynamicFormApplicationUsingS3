@@ -1,0 +1,23 @@
+[
+    {
+        "country": "USA",
+        "states": [
+            "Alabama",
+            "Utah"
+        ]
+    },
+    {
+        "country": "Canada",
+        "states": [
+            "British Columbia",
+            "Ontario"
+        ]
+    },
+    {
+        "country": "France",
+        "states": [
+            "Aquitaine",
+            "Upper Normandy"
+        ]
+    }
+]

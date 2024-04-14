@@ -1,0 +1,125 @@
+{
+    "page title": "simple nodejs app",
+    "page heading": "enter data",
+    "textblocks": [
+        {
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Adipiscing enim eu turpis egestas. Nam libero justo laoreet sit amet cursus sit amet dictum. Eleifend donec pretium vulputate sapien nec sagittis. A erat nam at lectus urna duis. Mi sit amet mauris commodo quis. Consectetur adipiscing elit duis tristique. Odio facilisis mauris sit amet. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper",
+            "x-position": 100,
+            "y-position": 100
+        },
+        {
+            "content": "Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Sit amet consectetur adipiscing elit. Varius sit amet mattis vulputate enim nulla. Cras fermentum odio eu feugiat pretium. Faucibus purus in massa tempor. Viverra adipiscing at in tellus integer feugiat. Ut porttitor leo a diam sollicitudin. Pretium fusce id velit ut tortor. Justo laoreet sit amet cursus sit. Vel turpis nunc eget lorem dolor sed. Neque gravida in fermentum et sollicitudin",
+            "x-position": 300,
+            "y-position": 300
+        },
+        {
+            "content": "Quam lacus suspendisse faucibus interdum posuere. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Risus nec feugiat in fermentum posuere urna. Nibh venenatis cras sed felis eget. Turpis nunc eget lorem dolor sed viverra ipsum. Est ultricies integer quis auctor elit sed. Etiam tempor orci eu lobortis elementum nibh. Egestas erat imperdiet sed euismod nisi porta. Aenean vel elit scelerisque mauris pellentesque pulvinar. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae.",
+            "x-position": 800,
+            "y-position": 800
+        }
+    ],
+    "fields": [
+        {
+            "type": "TextBox",
+            "heading": "First Name",
+            "value": "string",
+            "max characters": 30,
+            "tooltip": "Enter first name here",
+            "x-position": 200,
+            "y-position": 200
+        },
+        {
+            "type": "MultilineTextBox",
+            "heading": "Address",
+            "value": "string",
+            "max characters": 300,
+            "tooltip": "Enter address",
+            "x-position": 210,
+            "y-position": 210
+        },
+        {
+            "type": "Checkbox",
+            "heading": "Permanent",
+            "default": true,
+            "tooltip": "Is this employee permanent?",
+            "x-position": 220,
+            "y-position": 220
+        },
+        {
+            "type": "TextBox",
+            "heading": "Phone Number",
+            "value": "number",
+            "max value": 9999999999999,
+            "tooltip": "Enter phone number here",
+            "x-position": 230,
+            "y-position": 230
+        },
+        {
+            "type": "MultiSelectList",
+            "heading": "Favorite Fruits",
+            "value": "formdata/favoritefruit.json",
+            "tooltip": "Select favorite fruit",
+            "x-position": 240,
+            "y-position": 240
+        },
+        {
+            "type": "DropDownList",
+            "heading": "Country",
+            "list": "formdata/countries.json",
+            "key": "country",
+            "tooltip": "Select country",
+            "x-position": 245,
+            "y-position": 245
+        },
+        {
+            "type": "DropDownList",
+            "heading": "State",
+            "list": "formdata/countries.json",
+            "key": [
+                {
+                    "filterby": "=Country",
+                    "key": "states"
+                }
+            ],
+            "tooltip": "Select state",
+            "x-position": 250,
+            "y-position": 250
+        },
+        {
+            "type": "RadioButton",
+            "heading": "Type of Phone",
+            "list": "formdata/types.json",
+            "key": {
+                "filterby": "phone",
+                "key": "type"
+            },
+            "tooltip": "Select phone type",
+            "x-position": 260,
+            "y-position": 260
+        },
+        {
+            "type": "AddRemoveList",
+            "heading": "Favorite Color",
+            "value": "formdata/favoritecolor.json",
+            "tooltip": "Add favorite colors",
+            "x-position": 270,
+            "y-position": 270
+        }
+    ],
+    "buttons": [
+        {
+            "title": "Clear",
+            "javascript": "js/clear.js",
+            "tooltip": "Reset form",
+            "x-position": 600,
+            "y-position": 600
+        },
+        {
+            "title": "Submit",
+            "javascript": "js/submit.js",
+            "tooltip": "Submit form",
+            "x-position": 620,
+            "y-position": 600
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "category": "phone",
+        "types": [
+            "Cell Phone",
+            "Home Phone",
+            "Satellite Phone"
+        ]
+    },
+    {
+        "category": "internet",
+        "types": [
+            "Cable",
+            "Fiber",
+            "Satellite"
+        ]
+    },
+    {
+        "category": "tv",
+        "types": [
+            "CRT",
+            "Plasma",
+            "LCD",
+            "LED"
+        ]
+    }
+]
